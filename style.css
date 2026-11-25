@@ -73,6 +73,9 @@ button:hover {
     width: 260px;
     border-right: 2px solid #6e6e68;
     padding-right: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 #painel-direita {
@@ -110,4 +113,41 @@ button:hover {
     display: flex;
     flex-direction: column;
     gap: 6px;
+}
+
+#aba-ficha, #aba-inventario {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    max-width: 90vw;
+    background-color: rgba(24, 24, 28, 0.96);
+    border: 6px double #a8a8a0;
+    padding: 25px;
+    text-align: center;
+    z-index: 100;
+    box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.65);
+}
+
+#foto-personagem {
+    width: 180px;
+    height: 180px;
+    object-fit: contain;
+    image-rendering: pixelated;
+    border: 3px solid #888880;
+    background-color: #141418;
+    display: block;
+    margin: 0 auto 15px auto;
+}
+
+#aba-ficha p {
+    margin: 8px 0;
+    font-size: 16px;
+}
+
+#btn-fechar-ficha, #btn-fechar-inventario {
+    margin-top: 15px;
+    width: 100%;
+    text-align: center;
 }
