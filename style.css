@@ -1,0 +1,113 @@
+body {
+    background-image: url('foto/fudoC.png');
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #1c1c1e;
+
+    color: #d8d8d2;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+#Tela-de-criação-do-individuo {
+    align-self: center;
+    background-color: rgba(24, 24, 28, 0.82);
+    padding: 25px;
+    border: 4px double #a8a8a0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 300px;
+}
+
+input, select {
+    padding: 8px;
+    border: 2px solid #888880;
+    background-color: rgba(40, 40, 45, 0.85);
+    color: #e4e4de;
+    font-family: inherit;
+}
+
+button {
+    background-color: rgba(255, 255, 255, 0.06);
+    color: #d8d8d2;
+    border: 2px solid #888880;
+    padding: 10px 14px;
+    font-family: inherit;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+    text-align: left;
+    transition: 0.15s;
+}
+
+button:hover {
+    background-color: rgba(216, 216, 210, 0.2);
+    border-color: #e4e4de;
+    color: #ffffff;
+}
+
+#Tela-inicio-Jogo {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+#caixa-principal {
+    display: flex;
+    width: 100%;
+    background-color: rgba(24, 24, 28, 0.82);
+    border: 6px double #a8a8a0;
+    padding: 20px;
+    gap: 20px;
+    box-sizing: border-box;
+    align-items: stretch;
+}
+
+#painel-esquerda {
+    width: 260px;
+    border-right: 2px solid #6e6e68;
+    padding-right: 20px;
+}
+
+#painel-direita {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+#caixa-dialogo {
+    min-height: 150px;
+    cursor: pointer;
+}
+
+#quem-fala {
+    color: #f0f0ea;
+    border-bottom: 2px solid #888880;
+    display: inline-block;
+    padding-bottom: 2px;
+    margin: 0 0 12px 0;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+#texto-historia {
+    color: #d8d8d2;
+    margin: 0;
+    line-height: 1.6;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#opcoes-escolha {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}

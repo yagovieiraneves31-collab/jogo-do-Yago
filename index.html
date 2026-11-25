@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>jogo do Yago</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <Div id="Tela-de-criação-do-individuo">
+
+    <h2>Criação de individuo</h2>
+
+     <label for="inserção-nome">Nome:</label>
+     <input type="text" id="inserção-nome" placeholder="Digite o seu nome">
+
+
+     <select id="Seleção-genero">
+        <option value="masculino">Masculino</option>
+        <option value="Feminino">Feminino</option>
+     </select>
+
+    <button id="Spawnar">Spawnar na terra</button>
+
+    </Div>
+
+<div id="Tela-inicio-Jogo" style="display: none;">
+    <div id = "caixa-principal">
+        <div id = "painel-esquerda">
+
+       <button id="btn-paradinha-rpg">Ficha</button>
+       <button id="btn-abrir-inventario">Inventário</button>
+       <div id="aba-ficha" style="display: none;">
+    <h3>Bagulinho-do-individuo</h3>
+    <p>nome: <span id="nome-exibindo"></span> </p>
+    <p>Genero:   <span id="genero-exibindo"></span></p>
+    <p>classe: CLT</p>
+    <p>Estado Civil: sozinho</p>
+    <p>Dinheiro: <span id="dinheiro-exibindo">0</span></p>
+
+
+
+        
+       </div>
+
+       <div id="aba-inventario" style="display: none;">
+    <h3>Inventario</h3>
+    <ul id="lista-de-inventario"></ul>
+       </div>
+       
+<div id="aba-ficha" style="display: none;">
+    <h3>Ficha</h3>
+    <img id="foto-personagem" src="foto/personagem.png" alt="Foto do personagem">
+    <p>Nome: <span id="nome-exibindo"></span></p>
+    <p>Idade: <span id="idade-exibindo">20</span></p>
+    <p>Gênero: <span id="genero-exibindo"></span></p>
+    <p>Raça: <span id="raca-exibindo">Humano</span></p>
+    <p>Classe: <span id="classe-exibindo">CLT</span></p>
+    <p>Estado Civil: <span id="estado-civil-exibindo">Sozinho</span></p>
+    <p>Dinheiro: R$ <span id="dinheiro-exibindo">0</span></p>
+</div>
+
+        </div>
+
+        <div id="painel-direita">
+
+
+
+
+<div id="caixa-dialogo">
+    <H4 id="quem-fala">narrador</H4>
+    <p id="texto-historia"> 
+        Você acorda na sua cama, é tenta decidir se levanta ou continua dormindo
+    </p>
+</div>
+
+
+<div id="opcoes-escolha">
+    <button id="btn-continuarDormindo"> continuar dormindo </button>
+    <button id="btn-Levantar"> Levantar</button>
+    <button id="btn-Debater"> Se debater na cama</button>
+</div>
+
+
+        </div>
+    </div>
+</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
